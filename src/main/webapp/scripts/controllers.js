@@ -65,6 +65,7 @@ angular.
                         case 0:   return handleLostConnection(error);
                         case 404: return handleJenkinsRestart(error);
                         case 500: return handleInternalJenkins(error);
+                        case 504: return handleLostConnection(error);
                         default:  return handleUnknown(error);
                     }
                 }
